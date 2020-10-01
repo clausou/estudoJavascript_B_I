@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>JavaScript</title>
+
+		<script>
+	
+			//var listaFuncionario = ['Viviane', 'Rosângela', 'Miguel', 'Lucas', 'Fernanda']
+
+			var listaFuncionario = Array()
+
+			listaFuncionario['x'] = 'Viviane'
+			listaFuncionario[false] = 'Rosângela'
+			listaFuncionario[3] = 'Miguel'
+			listaFuncionario[27] = 'Lucas'
+			listaFuncionario[-12] = 'Fernanda'
+
+			//Técnica de wrapper
+			var f = function (valor, indice) {
+				console.log(valor, indice)
+			}
+			listaFuncionario.forEach(f)
+			
+
+			/*
+			console.log(listaFuncionario)
+			document.write(listaFuncionario[3])
+
+				listaFuncionario.forEach(function(valor, indice, array){
+				//lógica
+				console.log('índice: ' + indice + ' | valor: ' + valor)
+
+					if(valor =='Lucas') {
+						//essa técnica faz uma atribuição de nova valor a um determinado indice do array
+						array[indice] = 'Um novo valor'
+					}
+				})
+
+			console.log(listaFuncionario)
+			document.write('<br />' +listaFuncionario[3])
+			*/
+
+		</script>
+
+	</head>
+	<body>
+		
+	</body>
+</html>
